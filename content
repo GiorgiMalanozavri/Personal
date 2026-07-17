@@ -1,0 +1,151 @@
+https://www.linkedin.com/in/giorgimalania/
+
+https://github.com/GiorgiMalanozavri
+
+Personal Site Content Kit — Giorgi Malania
+
+Everything below is website-ready copy. It is more than you need on purpose. Pick and cut. Notes at the bottom flag what to tailor depending on who is reading.
+
+
+1. Positioning / tagline options
+
+Pick one. This is the single line under your name that tells someone what you are in three seconds.
+
+
+Engineer who builds at the intersection of software and hardware.
+Mechanical and aerospace engineer who ships full-stack software.
+I build AI-powered products and precision hardware. Sometimes both at once.
+Full-stack builder. Aerospace engineer. I ship things that work.
+
+
+The first two lead with your actual differentiator: you are one of very few people who can do both mechanical engineering and real web development. Lean into that instead of hiding it.
+
+
+2. Hero section
+
+Giorgi Malania
+[tagline from above]
+
+Two short buttons: View Projects and GitHub. Optional third: Resume.
+
+
+3. About
+
+Short version (for a compact site):
+
+I'm a mechanical and aerospace engineering student at Case Western Reserve University who builds software on the side, and increasingly in the middle. I've shipped AI-powered web apps, worked as a contractor on an exam-prep platform used by 600k+ students, and I'm currently building a precision optical inspection system that merges the two worlds. I move fast, I ship, and I care about understanding what I build.
+
+Longer version (if you want an About section with room):
+
+I'm a sophomore at Case Western Reserve University studying mechanical and aerospace engineering, but I've spent most of my free time building software. Over the past year I've shipped three real products: a personal AI assistant that lives on top of your email and calendar, an AI career-planning platform for students, and a quantum portfolio-optimization pipeline from a national hackathon.
+
+Alongside school I contract for RevisionDojo, a YC-backed AI exam-prep platform with over 600,000 users across 4,000+ schools, where I build content pipelines and technical materials. I've worked out of their Hong Kong office and I'm heading to Madrid this fall for a research and study-abroad semester.
+
+What ties it together is a bias toward building. I like taking an idea to something deployed and working, whether that's a web app, a physics simulation, or a piece of hardware. Right now I'm most excited about the overlap between the two: my current project is a precision optical inspection stage that pairs a 2-axis gantry with computer-vision defect detection.
+
+
+4. Projects
+
+List these as cards. Each has a short line for the card and a longer blurb for a detail view or hover. Lead with oushi.
+
+oushi — Personal AI assistant
+
+Card line: An AI assistant that lives on top of your email and calendar, and reaches out to you.
+
+Full blurb: A personal AI assistant built over Gmail and Google Calendar. It reads and triages email in real time through Gmail's Pub/Sub push notifications, understands sender and thread context, and proactively reaches out instead of waiting to be asked. Full auth, push notifications, and a clean daily-brief interface. Built and deployed end to end.
+
+Stack: Next.js · TypeScript · Supabase · Google APIs (Gmail, Calendar) · Pub/Sub · Vercel
+
+Links: Live demo · GitHub
+
+What to highlight if asked: the real-time email pipeline (Pub/Sub over polling) and the proactive-outreach design. This is your strongest engineering story.
+
+
+bluprint — AI career planning for students
+
+Card line: Upload your CV, get an AI-generated career roadmap, resume analysis, and job-fit feedback.
+
+Full blurb: A full-stack platform that turns a student's CV into a personalized career plan. It extracts a structured profile from an uploaded resume, generates a roadmap, analyzes the resume against job descriptions, and includes an assistant chat with saved history. End-to-end AI workflow from upload to actionable output.
+
+Stack: Next.js · TypeScript · Tailwind · Supabase · Prisma · Google Gemini
+
+Links: Live demo (bluprint1.vercel.app) · GitHub
+
+
+YQuantum 2026 — Quantum portfolio optimization
+
+Card line: Insurance portfolio selection solved on QuEra's neutral-atom quantum stack. Capgemini × The Hartford hackathon.
+
+Full blurb: Built for the YQuantum 2026 challenge with Capgemini and The Hartford. Reduces a real investment dataset to an 8-qubit portfolio problem, computes the exact classical optimum as ground truth, then trains QAOA on QuEra's Bloqade stack to recover it. Includes penalty calibration so the soft-constrained problem provably preserves the hard-budget solution. Reached ~10.5% probability mass on the exact optimum at p=3.
+
+Stack: Python · Bloqade · PyQrack · QAOA · QUBO
+
+Links: GitHub
+
+What to highlight: this is your depth/fundamentals project. It shows you can do real scientific computing, not just app-building.
+
+
+Optical inspection stage — In progress
+
+Card line: A 2-axis precision gantry with computer-vision defect detection and automated inspection reports.
+
+Full blurb: A self-directed project merging hardware and software: a 2-axis gantry inspection stage paired with a YOLO-based computer-vision pipeline that detects and localizes defects, then generates structured inspection reports. Designed around real semiconductor-inspection workflows.
+
+Stack: Python · YOLO · OpenCV · CAD (Creo) · FEA (Ansys)
+
+Links: GitHub (coming soon)
+
+Why include it in progress: it signals forward motion and is the clearest proof of your hardware-plus-software angle. "Currently building" reads as momentum, not incompleteness.
+
+
+5. Skills / stack
+
+Group them so they scan fast. Only list what you can actually back up.
+
+Languages: TypeScript, JavaScript, Python
+
+Web / full-stack: Next.js, React, Tailwind CSS, Node.js, REST APIs
+
+Backend / data: Supabase, Prisma, SQLite, PostgreSQL, Google APIs (Gmail, Calendar), Pub/Sub
+
+AI: LLM integration (Gemini, Claude), prompt design, AI product workflows
+
+Engineering / hardware: CAD (SolidWorks, Creo), FEA (Ansys), computer vision (YOLO, OpenCV). CSWA certified.
+
+Tools: Git, Vercel, Cursor
+
+
+6. Experience
+
+Software / Content Contractor — RevisionDojo (MyDojo Inc., YC F24)
+2025 – present
+AI exam-prep platform with 600,000+ users across 4,000+ schools. Build technical content pipelines including TikZ diagram generation and physics/math materials. Worked on-site from the Hong Kong office.
+
+On-campus roles — Case Western Reserve University
+2025 – present
+Positions at the Tinkham Veale University Center and the Weatherhead School of Management.
+
+(If you want these tighter, the RevisionDojo one is the one that matters. The on-campus roles can be a single line or cut.)
+
+
+7. Education
+
+Case Western Reserve University
+BSE, Mechanical and Aerospace Engineering · Expected May 2028
+Studying abroad at Universidad Carlos III de Madrid, Fall 2026.
+
+United World College Maastricht
+International Baccalaureate
+
+
+8. Contact
+
+Keep it to a clean row of links.
+
+
+Email: [your email]
+GitHub: github.com/GiorgiMalanozavri
+LinkedIn: linkedin.com/in/giorgimalania
+
+
+Optional one-liner above the links: Open to full-stack and software internships. Always up for a good build.
