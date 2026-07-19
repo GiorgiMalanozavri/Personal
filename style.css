@@ -12,7 +12,7 @@
   --line:       #e4d9c5;
   --accent:     #b5763f;   /* warm terracotta */
   --radius:     18px;
-  --maxw:       1080px;
+  --maxw:       1200px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -114,10 +114,10 @@ img { max-width: 100%; display: block; }
 /* ---------- projects ---------- */
 .project {
   display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  gap: clamp(32px, 5vw, 68px);
+  grid-template-columns: 0.85fr 1.3fr;
+  gap: clamp(32px, 5vw, 72px);
   align-items: center;
-  padding: clamp(40px, 6vw, 72px) 0;
+  padding: clamp(40px, 6vw, 80px) 0;
   border-top: 1px solid var(--line);
 }
 .project:nth-child(even) .project__text { order: 2; }
@@ -125,7 +125,8 @@ img { max-width: 100%; display: block; }
 .project__meta {
   display: flex;
   align-items: center;
-  gap: 14px;
+  flex-wrap: wrap;
+  gap: 10px 14px;
   margin-bottom: 14px;
 }
 .project__index {
