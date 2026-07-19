@@ -3,382 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>r/GiorgiMalania</title>
-  <meta name="description" content="Engineering student learning data, AI, and full-stack development." />
+  <title>Giorgi Malania</title>
+  <meta name="description" content="Giorgi Malania — mechanical & aerospace engineer who ships full-stack software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- top nav -->
-  <nav class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark">G</span>
-        <span class="brand-name">giorgi</span>
-      </a>
-      <div class="search">
-        <span class="search-icon">🔍</span>
-        <input type="text" placeholder="Search r/GiorgiMalania" aria-label="Search" />
-      </div>
-      <a class="nav-avatar" href="mailto:giorgi@revisiondojo.com" title="Contact">
-        <img src="portrait.jpeg" alt="Giorgi Malania" />
-      </a>
-    </div>
-  </nav>
-
-  <!-- subreddit banner -->
-  <header class="banner">
-    <div class="banner-strip"></div>
-    <div class="banner-inner">
-      <img class="banner-avatar" src="portrait.jpeg" alt="Giorgi Malania" />
-      <div class="banner-title">
-        <h1>r/GiorgiMalania</h1>
-        <p>r/GiorgiMalania · Engineering student learning data, AI, and full-stack development</p>
-      </div>
-      <button class="join-btn" data-join>Following</button>
-    </div>
+  <header class="nav">
+    <a href="#top" class="nav__brand">GM</a>
+    <nav class="nav__links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <!-- layout -->
-  <div class="layout">
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero__eyebrow">Cleveland · Madrid this fall</p>
+      <h1 class="hero__name">Giorgi Malania</h1>
+      <p class="hero__tag">Mechanical &amp; aerospace engineer who ships full-stack software. I build AI-powered products and precision hardware — sometimes both at once.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </section>
 
-    <!-- feed -->
-    <main class="feed">
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2>Selected work</h2>
+        <p>A few things I've built and shipped.</p>
+      </div>
 
-      <!-- pinned intro post -->
-      <article class="post pinned" data-post-id="intro">
-        <span class="comment-hint">go on, read the comments 👉</span>
-        <div class="votes">
-          <button class="vote up" aria-label="Upvote">▲</button>
-          <span class="score">982</span>
-          <button class="vote down" aria-label="Downvote">▼</button>
+      <!-- oushi -->
+      <article class="project">
+        <div class="project__text">
+          <div class="project__meta">
+            <span class="project__index">01</span>
+            <span class="project__status">Live</span>
+          </div>
+          <h3>oushi</h3>
+          <p class="project__lead">A personal AI assistant that lives on top of your email and calendar — and reaches out to you.</p>
+          <p>Reads and triages email in real time through Gmail's Pub/Sub push notifications, understands sender and thread context, and proactively surfaces what needs you instead of waiting to be asked. Full auth, push pipeline, and a calm daily-brief interface. Built and deployed end to end.</p>
+          <ul class="stack">
+            <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
+          </ul>
         </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="pin">📌 Pinned by mods</span>
-            <span>Posted by u/giorgi</span>
-            <span class="flair flair-intro">intro</span>
+        <div class="project__media project__media--stack">
+          <img src="images/oushi-today.png" alt="oushi daily brief interface" loading="lazy" />
+          <div class="media-row">
+            <img src="images/oushi-chat.png" alt="oushi answering what's waiting on me" loading="lazy" />
+            <img src="images/oushi-labels.png" alt="oushi Gmail label system" loading="lazy" />
           </div>
-          <h2 class="post-title">Hey, I'm Giorgi. I'm learning to build with data and AI</h2>
-          <p class="post-text">
-            I'm a mechanical and aerospace engineering student at Case Western Reserve
-            University, and lately I've been going deep on data and AI. I like taking an
-            idea and turning it into something real, then figuring out how it works all the
-            way down, whether that's a web app, a machine learning pipeline, or a piece of
-            hardware. Mostly I'm just curious and always learning something new.
-          </p>
-          <div class="post-actions">
-            <span class="act-comments">💬 42 Comments</span>
-            <span>↗ Share</span>
-            <span>⭐ Save</span>
-          </div>
-
-          <section class="comments">
-            <div class="comment">
-              <div class="c-avatar">🗿</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/brochacho_supreme</span><span>· 3h</span></div>
-                <p class="c-text">brochacho really said "software AND hardware" like it's nothing 😭 the aura is unmatched</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">427</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">🧑‍🌾</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/aura_farmer_9000</span><span>· 5h</span></div>
-                <p class="c-text">a mechanical engineer that can ALSO center a div?? chat this is the final boss 🙏</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">318</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                <div class="comment nested">
-                  <div class="c-avatar">😩</div>
-                  <div class="c-main">
-                    <div class="c-meta"><span class="c-user">u/frontend_andy</span><span>· 4h</span></div>
-                    <p class="c-text">he's mogging all of us fr 😭 I'm switching majors</p>
-                    <div class="c-actions"><span class="cv up">▲</span><span class="c-score">156</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">💀</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/sigma_grindset</span><span>· 8h</span></div>
-                <p class="c-text">sophomore with 3 shipped products meanwhile I can't ship a text back. we are NOT the same. cooked 💀</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">203</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-          </section>
         </div>
       </article>
 
-      <!-- oushi -->
-      <article class="post" data-post-id="oushi">
-        <div class="votes">
-          <button class="vote up" aria-label="Upvote">▲</button>
-          <span class="score">1.4k</span>
-          <button class="vote down" aria-label="Downvote">▼</button>
+      <!-- bluprint -->
+      <article class="project">
+        <div class="project__text">
+          <div class="project__meta">
+            <span class="project__index">02</span>
+            <span class="project__status">Live</span>
+          </div>
+          <h3>bluprint</h3>
+          <p class="project__lead">Upload your CV, get an AI-generated career roadmap, resume analysis, and job-fit feedback.</p>
+          <p>A full-stack platform that turns a student's CV into a personalized career plan. It extracts a structured profile from an uploaded resume, generates a roadmap, analyzes the resume against job descriptions, and includes an assistant chat with saved history — an end-to-end AI workflow from upload to actionable output.</p>
+          <ul class="stack">
+            <li>Next.js</li><li>TypeScript</li><li>Tailwind</li><li>Supabase</li><li>Prisma</li><li>Gemini</li>
+          </ul>
+          <div class="project__links">
+            <a href="https://bluprint1.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+          </div>
         </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span>Posted by u/giorgi</span>
-            <span>· Projects ·</span>
-            <span class="flair flair-shipped">shipped</span>
+        <div class="project__media">
+          <div class="media-placeholder">
+            <span>bluprint</span>
+            <small>bluprint1.vercel.app</small>
           </div>
-          <h2 class="post-title">
-            <a href="https://oushi.app">oushi, a personal AI assistant that reaches out to you</a>
-          </h2>
-          <p class="post-text">
-            A personal AI assistant built over Gmail and Google Calendar. It reads and triages
-            email in real time through Gmail's Pub/Sub push notifications, understands sender
-            and thread context, and proactively reaches out instead of waiting to be asked.
-            Full auth, push notifications, and a clean daily-brief interface. Built and deployed
-            end to end.
-          </p>
-          <p class="post-stack">Next.js · TypeScript · Supabase · Google APIs · Pub/Sub · Vercel</p>
-          <div class="post-actions">
-            <span class="act-comments">💬 128 Comments</span>
-            <span>↗ Share</span>
-            <span>⭐ Save</span>
-          </div>
-
-          <section class="comments">
-            <div class="comment">
-              <div class="c-avatar">🥹</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/notifications_off</span><span>· 2h</span></div>
-                <p class="c-text">an AI that emails you FIRST?? bro really invented the friend that texts back 😭🙏</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">891</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">🧠</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/pubsub_pilled</span><span>· 4h</span></div>
-                <p class="c-text">using Pub/Sub push instead of polling is such a flex. certified hood classic 🫡</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">544</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                <div class="comment nested">
-                  <div class="c-avatar">🧑‍💻</div>
-                  <div class="c-main">
-                    <div class="c-meta"><span class="c-user">u/giorgi</span><span class="op-tag">OP</span><span>· 3h</span></div>
-                    <p class="c-text">real ones know polling is for the weak 🫡</p>
-                    <div class="c-actions"><span class="cv up">▲</span><span class="c-score">612</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">😮‍💨</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/rizzler3000</span><span>· 6h</span></div>
-                <p class="c-text">the rizz to build this AND fly to Madrid?? unfair. he's him 📈</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">277</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-          </section>
         </div>
       </article>
 
       <!-- YQuantum -->
-      <article class="post" data-post-id="yquantum">
-        <div class="votes">
-          <button class="vote up" aria-label="Upvote">▲</button>
-          <span class="score">2.1k</span>
-          <button class="vote down" aria-label="Downvote">▼</button>
+      <article class="project">
+        <div class="project__text">
+          <div class="project__meta">
+            <span class="project__index">03</span>
+            <span class="project__status">Hackathon</span>
+          </div>
+          <h3>YQuantum 2026</h3>
+          <p class="project__lead">Insurance portfolio selection solved on QuEra's neutral-atom quantum stack. Capgemini × The Hartford challenge.</p>
+          <p>Reduces a real investment dataset to an 8-qubit portfolio problem, computes the exact classical optimum as ground truth, then trains QAOA on QuEra's Bloqade stack to recover it — with penalty calibration so the soft-constrained problem provably preserves the hard-budget solution. Reached ~10.5% probability mass on the exact optimum at p=3.</p>
+          <ul class="stack">
+            <li>Python</li><li>Bloqade</li><li>PyQrack</li><li>QAOA</li><li>QUBO</li>
+          </ul>
         </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span>Posted by u/giorgi</span>
-            <span>· Projects ·</span>
-            <span class="flair flair-research">research</span>
-          </div>
-          <h2 class="post-title">
-            <a href="https://github.com/GiorgiMalanozavri">YQuantum 2026, quantum portfolio optimization on QuEra's stack</a>
-          </h2>
-          <p class="post-text">
-            Built for the Capgemini x The Hartford hackathon. Reduces a real investment dataset
-            to an 8-qubit portfolio problem, computes the exact classical optimum as ground truth,
-            then trains QAOA on QuEra's Bloqade stack to recover it, with penalty calibration that
-            provably preserves the hard-budget solution. Reached ~10.5% probability mass on the
-            exact optimum at p=3.
-          </p>
-          <p class="post-stack">Python · Bloqade · PyQrack · QAOA · QUBO</p>
-          <div class="post-actions">
-            <span class="act-comments">💬 203 Comments</span>
-            <span>↗ Share</span>
-            <span>⭐ Save</span>
-          </div>
-
-          <section class="comments">
-            <div class="comment">
-              <div class="c-avatar">🗿</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/quantum_chad</span><span>· 2h</span></div>
-                <p class="c-text">8 qubits and a dream. he's literally him 🗿 the rest of us are still on classical bits</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">1200</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">🐈</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/schrodingers_w</span><span>· 4h</span></div>
-                <p class="c-text">10.5% probability mass but 100% aura. both alive and cracked at the same time ⚛️</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">742</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                <div class="comment nested">
-                  <div class="c-avatar">🤯</div>
-                  <div class="c-main">
-                    <div class="c-meta"><span class="c-user">u/qaoa_enjoyer</span><span>· 3h</span></div>
-                    <p class="c-text">SHEEEESH the penalty calibration alone 🤯 bro did a whole physics paper on a weekend</p>
-                    <div class="c-actions"><span class="cv up">▲</span><span class="c-score">388</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">💀</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/hackathon_hitter</span><span>· 9h</span></div>
-                <p class="c-text">brochacho went to a hackathon and came back with QUANTUM 💀 goated with the sauce</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">515</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-          </section>
+        <div class="project__media project__media--stack">
+          <img src="images/yquantum-loss.png" alt="QAOA training loss curves" loading="lazy" />
+          <img src="images/yquantum-heatmap.png" alt="Asset correlation heatmap" loading="lazy" />
         </div>
       </article>
 
-      <!-- optical inspection -->
-      <article class="post" data-post-id="optical">
-        <div class="votes">
-          <button class="vote up" aria-label="Upvote">▲</button>
-          <span class="score">759</span>
-          <button class="vote down" aria-label="Downvote">▼</button>
+      <!-- Optical inspection -->
+      <article class="project">
+        <div class="project__text">
+          <div class="project__meta">
+            <span class="project__index">04</span>
+            <span class="project__status">In progress</span>
+          </div>
+          <h3>Optical inspection stage</h3>
+          <p class="project__lead">A 2-axis precision gantry with computer-vision defect detection and automated inspection reports.</p>
+          <p>A self-directed project merging hardware and software: a 2-axis gantry inspection stage paired with a YOLO-based vision pipeline that detects and localizes defects, then generates structured inspection reports. Designed around real semiconductor-inspection workflows.</p>
+          <ul class="stack">
+            <li>Python</li><li>YOLO</li><li>OpenCV</li><li>Creo</li><li>Ansys</li>
+          </ul>
         </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span>Posted by u/giorgi</span>
-            <span>· Projects ·</span>
-            <span class="flair flair-wip">in progress</span>
+        <div class="project__media">
+          <div class="media-placeholder">
+            <span>Coming soon</span>
+            <small>hardware + vision</small>
           </div>
-          <h2 class="post-title">
-            <a href="https://github.com/GiorgiMalanozavri">Optical inspection stage, a 2-axis gantry with CV defect detection</a>
-          </h2>
-          <p class="post-text">
-            A self-directed project merging hardware and software: a 2-axis precision gantry paired
-            with a YOLO-based computer-vision pipeline that detects and localizes defects, then
-            generates structured inspection reports. Designed around real semiconductor-inspection
-            workflows.
-          </p>
-          <p class="post-stack">Python · YOLO · OpenCV · Creo (CAD) · Ansys (FEA)</p>
-          <div class="post-actions">
-            <span class="act-comments">💬 51 Comments</span>
-            <span>↗ Share</span>
-            <span>⭐ Save</span>
-          </div>
-
-          <section class="comments">
-            <div class="comment">
-              <div class="c-avatar">🤖</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/gantry_gang</span><span>· 3h</span></div>
-                <p class="c-text">building a robot that judges other things for defects. sigma behavior honestly 🗿</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">401</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">📈</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/yolo_yapper</span><span>· 5h</span></div>
-                <p class="c-text">YOLO detecting defects while bro detects opportunities 📈 built different</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">263</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-            <div class="comment">
-              <div class="c-avatar">🫡</div>
-              <div class="c-main">
-                <div class="c-meta"><span class="c-user">u/hardware_homie</span><span>· 8h</span></div>
-                <p class="c-text">hardware AND software?? who's gonna tell the recruiters this man is a cheat code 🫡</p>
-                <div class="c-actions"><span class="cv up">▲</span><span class="c-score">177</span><span class="cv down">▼</span><span class="c-reply">Reply</span></div>
-              </div>
-            </div>
-          </section>
         </div>
       </article>
+    </section>
 
-    </main>
-
-    <!-- sidebar -->
-    <aside class="sidebar">
-
-      <div class="card about">
-        <div class="card-head">About Community</div>
-        <div class="card-body">
-          <p class="about-desc">
-            Engineering student learning data, AI, and full-stack development.
-            Open to software and data engineering internships. Always up for building something new.
-          </p>
-          <div class="stat-row">
-            <div class="stat">
-              <span class="stat-num">3</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat">
-              <span class="stat-num">data + AI</span>
-              <span class="stat-label">Current focus</span>
-            </div>
-          </div>
-          <div class="cake">🎂 Grad date May 2028 · CWRU</div>
-          <div class="about-links">
-            <a href="mailto:giorgi@revisiondojo.com">Email</a>
-            <a href="https://github.com/GiorgiMalanozavri">GitHub</a>
-            <a href="https://www.linkedin.com/in/giorgimalania/">LinkedIn</a>
-          </div>
-          <a class="cta" href="mailto:giorgi@revisiondojo.com">Get in touch</a>
+    <!-- ABOUT -->
+    <section id="about" class="section section--about">
+      <div class="about">
+        <div class="about__photo">
+          <img src="images/portrait.jpeg" alt="Giorgi Malania" loading="lazy" />
         </div>
-      </div>
+        <div class="about__text">
+          <h2>About</h2>
+          <p>I'm a mechanical and aerospace engineering student at Case Western Reserve University who builds software on the side — and increasingly in the middle. I've shipped AI-powered web apps, contracted on an exam-prep platform used by 600k+ students, and I'm building a precision optical inspection system that merges the two worlds.</p>
+          <p>Alongside school I contract for <strong>RevisionDojo</strong>, a YC-backed AI exam-prep platform with 600,000+ users across 4,000+ schools, building content pipelines and technical materials. I've worked out of their Hong Kong office and I'm heading to Madrid this fall for a research and study-abroad semester.</p>
+          <p>What ties it together is a bias toward building — taking an idea to something deployed and working, whether that's a web app, a physics simulation, or a piece of hardware.</p>
 
-      <div class="card">
-        <div class="card-head">Tech Stack</div>
-        <div class="card-body">
-          <dl class="skills">
-            <div><dt>Languages</dt><dd>TypeScript, JavaScript, Python</dd></div>
-            <div><dt>Full-stack</dt><dd>Next.js, React, Tailwind, Node.js, REST</dd></div>
-            <div><dt>Backend</dt><dd>Supabase, Prisma, PostgreSQL, Google APIs, Pub/Sub</dd></div>
-            <div><dt>AI</dt><dd>LLM integration (Gemini, Claude), prompt design</dd></div>
-            <div><dt>Engineering</dt><dd>CAD (SolidWorks, Creo), FEA (Ansys), CV (YOLO, OpenCV)</dd></div>
-          </dl>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">Experience</div>
-        <div class="card-body">
-          <div class="xp">
-            <div class="xp-head">
-              <span class="xp-role">Software / Content Contractor, RevisionDojo (YC F24)</span>
-              <span class="xp-date">since 2025</span>
+          <div class="about__cols">
+            <div>
+              <h4>Building with</h4>
+              <p>TypeScript · Python · Next.js · React · Tailwind · Node · Supabase · Prisma · Postgres · Google APIs · Pub/Sub</p>
             </div>
-            <p class="xp-desc">
-              Building technical content pipelines for an AI exam-prep platform, including
-              automated TikZ diagram generation and physics and math materials. Spent time
-              working on-site from the Hong Kong office.
-            </p>
-          </div>
-          <div class="xp">
-            <div class="xp-head">
-              <span class="xp-role">BSE, Mechanical &amp; Aerospace, CWRU</span>
-              <span class="xp-date">exp. 2028</span>
+            <div>
+              <h4>Engineering</h4>
+              <p>SolidWorks · Creo · Ansys (FEA) · YOLO · OpenCV · CSWA certified</p>
             </div>
-            <p class="xp-desc">
-              Studying abroad at Universidad Carlos III de Madrid, Fall 2026.
-            </p>
+            <div>
+              <h4>Education</h4>
+              <p>BSE, Mechanical &amp; Aerospace Eng. — CWRU, expected May 2028. Studying abroad at UC3M Madrid, Fall 2026. IB — UWC Maastricht.</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <p class="foot">Built by u/giorgi · not actually Reddit</p>
-    </aside>
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <p class="contact__note">Open to full-stack and software internships. Always up for a good build.</p>
+      <h2>Let's talk</h2>
+      <div class="contact__links">
+        <a href="mailto:giorgi@revisiondojo.com">giorgi@revisiondojo.com</a>
+        <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
-  </div>
-
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <footer class="footer">
+    <span>© 2026 Giorgi Malania</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 </body>
 </html>
