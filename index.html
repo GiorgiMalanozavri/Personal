@@ -4,52 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giorgi Malania</title>
-  <meta name="description" content="Giorgi Malania — mechanical & aerospace engineer who ships full-stack software." />
+  <meta name="description" content="Giorgi Malania — mechanical & aerospace engineer who ships full-stack software. Projects, experience, and work in AI, hardware, and the web." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="top">
+  <!-- ---------- nav ---------- -->
   <header class="nav">
-    <a href="#top" class="nav__brand">GM</a>
-    <nav class="nav__links">
+    <a href="#top" class="nav__brand">Giorgi&nbsp;Malania</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
+  <main>
+    <!-- ---------- hero ---------- -->
     <section class="hero">
-      <p class="hero__eyebrow">Cleveland · Madrid this fall</p>
-      <h1 class="hero__name">Giorgi Malania</h1>
-      <p class="hero__tag">Mechanical &amp; aerospace engineer who ships full-stack software. I build AI products and precision hardware.</p>
+      <p class="eyebrow">Mechanical &amp; aerospace engineer · Full-stack builder</p>
+      <h1 class="hero__name">Giorgi<br>Malania</h1>
+      <p class="hero__pron"><span>/ gee·OR·gee &nbsp;ma·LAH·nee·ah /</span></p>
+      <p class="hero__intro">
+        Welcome to my corner of the internet. I build at the seam between hardware and
+        software — AI products, precision machines, and the occasional quantum experiment.
+        Right now I'm most interested in what happens when the two worlds meet.
+        Outside the codebase you'll find me somewhere new: Hong Kong last year, Madrid this fall.
+      </p>
+
+      <!-- titleblock: reads like the corner of an engineering drawing -->
+      <dl class="titleblock">
+        <div><dt>Location</dt><dd>Cleveland → Madrid</dd></div>
+        <div><dt>Focus</dt><dd>AI · Full-stack · Hardware</dd></div>
+        <div><dt>Status</dt><dd>Open to internships</dd></div>
+      </dl>
+
       <div class="hero__actions">
-        <a class="btn btn--solid" href="#projects">View projects</a>
+        <a class="btn btn--solid" href="#projects">See the work</a>
         <a class="btn" href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn" href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section__head">
-        <h2>Selected work</h2>
-        <p>Things I've built and shipped.</p>
-      </div>
+    <!-- ---------- work / experience ---------- -->
+    <section id="work" class="section reveal">
+      <div class="marker"><span class="marker__no">§ 01</span><span class="marker__label">Experience</span><span class="marker__rule"></span></div>
+
+      <ol class="timeline">
+        <li class="entry">
+          <span class="entry__date">2025 — Now</span>
+          <div class="entry__body">
+            <h3>Software &amp; Content Contractor</h3>
+            <p class="entry__org">RevisionDojo — MyDojo Inc. (YC F24)</p>
+            <p>AI exam-prep platform with 600,000+ users across 4,000+ schools. Build technical
+              content pipelines, including TikZ diagram generation and physics/math materials.
+              Worked on-site from the Hong Kong office.</p>
+          </div>
+        </li>
+        <li class="entry">
+          <span class="entry__date">2025 — Now</span>
+          <div class="entry__body">
+            <h3>On-campus roles</h3>
+            <p class="entry__org">Case Western Reserve University</p>
+            <p>Positions at the Tinkham Veale University Center and the Weatherhead School of
+              Management, alongside a full engineering course load.</p>
+          </div>
+        </li>
+        <li class="entry">
+          <span class="entry__date">2024 — 2028</span>
+          <div class="entry__body">
+            <h3>BSE, Mechanical &amp; Aerospace Engineering</h3>
+            <p class="entry__org">Case Western Reserve University · expected May 2028</p>
+            <p>Studying abroad at Universidad Carlos III de Madrid, Fall 2026.
+              CSWA-certified. Previously IB at UWC Maastricht.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ---------- projects ---------- -->
+    <section id="projects" class="section reveal">
+      <div class="marker"><span class="marker__no">§ 02</span><span class="marker__label">Projects &amp; toolkit</span><span class="marker__rule"></span></div>
+
+      <!-- toolkit: a parts list -->
+      <ul class="toolkit">
+        <li>TypeScript</li><li>Python</li><li>Next.js</li><li>React</li><li>Tailwind</li>
+        <li>Node</li><li>Supabase</li><li>Prisma</li><li>PostgreSQL</li><li>Google APIs</li>
+        <li>Pub/Sub</li><li>PyTorch</li><li>YOLO</li><li>OpenCV</li><li>SolidWorks</li>
+        <li>Creo</li><li>Ansys (FEA)</li><li>Git · Vercel</li>
+      </ul>
 
       <!-- oushi -->
       <article class="project">
         <div class="project__text">
           <div class="project__meta">
-            <span class="project__index">01</span>
-            <span class="project__status">Live</span>
+            <span class="project__tag">Live</span>
+            <span class="project__type">AI · Full-stack</span>
           </div>
           <h3>oushi</h3>
           <p class="project__lead">A personal AI assistant built over Gmail and Google Calendar.</p>
-          <p>Triages email in real time using Gmail's Pub/Sub push notifications, tracks sender and thread context, and surfaces what needs a reply. Includes full Google auth, the push pipeline, and a daily-brief interface. Built and deployed end to end.</p>
+          <p>Triages email in real time using Gmail's Pub/Sub push notifications, tracks sender and
+            thread context, and surfaces what needs a reply. Full Google auth, the push pipeline,
+            and a daily-brief interface. Built and deployed end to end.</p>
           <ul class="stack">
             <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
           </ul>
@@ -57,25 +118,30 @@
             <a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </div>
-        <div class="project__media project__media--stack">
+        <figure class="project__media project__media--stack">
           <img src="images/oushi-today.png" alt="oushi daily brief interface" loading="lazy" />
           <div class="media-row">
             <img src="images/oushi-chat.png" alt="oushi answering what's waiting on me" loading="lazy" />
             <img src="images/oushi-labels.png" alt="oushi Gmail label system" loading="lazy" />
           </div>
-        </div>
+        </figure>
       </article>
 
       <!-- YQuantum -->
       <article class="project">
         <div class="project__text">
           <div class="project__meta">
-            <span class="project__index">02</span>
-            <span class="project__status">2nd place · Best Computational Accuracy</span>
+            <span class="project__tag project__tag--award">2nd place · Best Computational Accuracy</span>
+            <span class="project__type">Quantum · Research</span>
           </div>
           <h3>YQuantum 2026</h3>
-          <p class="project__lead">Insurance portfolio selection on QuEra's neutral-atom quantum stack. 2nd place overall and Best Computational Accuracy at the Capgemini × The Hartford challenge, YQuantum 2026 (Yale).</p>
-          <p>Reduces a real investment dataset to an 8-qubit portfolio problem, computes the exact classical optimum, then trains QAOA on QuEra's Bloqade stack to recover it. Penalty calibration keeps the soft-constrained problem's optimum equal to the hard-budget solution. Reached ~10.5% probability mass on the exact optimum at p=3.</p>
+          <p class="project__lead">Insurance portfolio selection on QuEra's neutral-atom quantum stack.
+            2nd place overall and Best Computational Accuracy at the Capgemini × The Hartford challenge,
+            YQuantum 2026 (Yale).</p>
+          <p>Reduces a real investment dataset to an 8-qubit portfolio problem, computes the exact
+            classical optimum, then trains QAOA on QuEra's Bloqade stack to recover it. Penalty
+            calibration keeps the soft-constrained optimum equal to the hard-budget solution.
+            Reached ~10.5% probability mass on the exact optimum at p=3.</p>
           <ul class="stack">
             <li>Python</li><li>Bloqade</li><li>PyQrack</li><li>QAOA</li><li>QUBO</li>
           </ul>
@@ -83,22 +149,24 @@
             <a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </div>
-        <div class="project__media project__media--stack">
+        <figure class="project__media project__media--stack">
           <img src="images/yquantum-loss.png" alt="QAOA training loss curves" loading="lazy" />
           <img src="images/yquantum-heatmap.png" alt="Asset correlation heatmap" loading="lazy" />
-        </div>
+        </figure>
       </article>
 
-      <!-- Optical inspection -->
+      <!-- optical -->
       <article class="project">
         <div class="project__text">
           <div class="project__meta">
-            <span class="project__index">03</span>
-            <span class="project__status">In progress</span>
+            <span class="project__tag project__tag--wip">In progress</span>
+            <span class="project__type">Hardware · Vision</span>
           </div>
           <h3>Optical inspection stage</h3>
           <p class="project__lead">A 2-axis gantry inspection stage with computer-vision defect detection.</p>
-          <p>A 2-axis gantry paired with a YOLO vision pipeline that detects and localizes defects and generates inspection reports. Modeled on semiconductor-inspection workflows.</p>
+          <p>A 2-axis gantry paired with a YOLO vision pipeline that detects and localizes defects
+            and generates inspection reports. Modeled on semiconductor-inspection workflows — my
+            clearest proof of the hardware-plus-software angle.</p>
           <ul class="stack">
             <li>Python</li><li>YOLO</li><li>OpenCV</li><li>Creo</li><li>Ansys</li>
           </ul>
@@ -106,48 +174,20 @@
             <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">GitHub ↗</a>
           </div>
         </div>
-        <div class="project__media">
+        <figure class="project__media">
           <div class="media-placeholder">
             <span>Coming soon</span>
-            <small>hardware + vision</small>
+            <small>gantry + vision pipeline</small>
           </div>
-        </div>
+        </figure>
       </article>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section section--about">
-      <div class="about">
-        <div class="about__photo">
-          <img src="images/portrait.jpeg" alt="Giorgi Malania" loading="lazy" />
-        </div>
-        <div class="about__text">
-          <h2>About</h2>
-          <p>I'm a mechanical and aerospace engineering student at Case Western Reserve University who builds software. I've shipped AI web apps, contracted on an exam-prep platform used by 600k+ students, and I'm building an optical inspection system that pairs hardware with computer vision.</p>
-          <p>Alongside school I contract for <strong>RevisionDojo</strong>, a YC-backed AI exam-prep platform with 600,000+ users across 4,000+ schools, building content pipelines and technical materials. I've worked from their Hong Kong office and I'm in Madrid this fall for a study-abroad semester.</p>
-
-          <div class="about__cols">
-            <div>
-              <h4>Building with</h4>
-              <p>TypeScript · Python · Next.js · React · Tailwind · Node · Supabase · Prisma · Postgres · Google APIs · Pub/Sub</p>
-            </div>
-            <div>
-              <h4>Engineering</h4>
-              <p>SolidWorks · Creo · Ansys (FEA) · YOLO · OpenCV · CSWA certified</p>
-            </div>
-            <div>
-              <h4>Education</h4>
-              <p>BSE, Mechanical &amp; Aerospace Eng. — CWRU, expected May 2028. Studying abroad at UC3M Madrid, Fall 2026. IB — UWC Maastricht.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section--contact">
-      <p class="contact__note">Open to full-stack and software internships.</p>
-      <h2>Let's talk</h2>
+    <!-- ---------- contact ---------- -->
+    <section id="contact" class="section section--contact reveal">
+      <div class="marker"><span class="marker__no">§ 03</span><span class="marker__label">Contact</span><span class="marker__rule"></span></div>
+      <h2 class="contact__headline">Let's build<br>something.</h2>
+      <p class="contact__note">Open to full-stack and software internships. Fastest way to reach me:</p>
       <div class="contact__links">
         <a href="mailto:giorgi@revisiondojo.com">giorgi@revisiondojo.com</a>
         <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">GitHub</a>
@@ -160,5 +200,7 @@
     <span>© 2026 Giorgi Malania</span>
     <a href="#top">Back to top ↑</a>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
