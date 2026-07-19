@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giorgi Malania</title>
-  <meta name="description" content="Giorgi Malania — mechanical engineer who mostly builds software." />
+  <meta name="description" content="Giorgi Malania — engineering student and product manager. Projects, work, and activities." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
@@ -18,8 +18,7 @@
         <img class="avatar" src="images/portrait.jpeg" alt="Giorgi Malania" />
         <div class="profile__meta">
           <h1>Giorgi Malania</h1>
-          <p class="tagline">Mechanical engineer who mostly builds software.</p>
-          <p class="status"><span class="dot" aria-hidden="true"></span>Cleveland → Madrid · open to internships</p>
+          <p class="status">Cleveland → Madrid · open to internships</p>
           <p class="links">
             <a href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">Github</a>
@@ -43,37 +42,38 @@
       <div class="panels">
         <!-- PROJECTS -->
         <section class="panel is-active" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects" tabindex="0">
-          <article class="item item--media">
-            <a class="item__thumb" href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">
-              <img src="images/oushi-today.png" alt="oushi interface" loading="lazy" />
-            </a>
-            <div class="item__body">
-              <div class="item__head">
-                <h3><a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">oushi</a></h3>
-                <span class="chip">Live</span>
-              </div>
-              <p>An assistant that sits on top of your Gmail and calendar. As mail comes in, it works out what actually needs you and says so, instead of leaving you to dig through the inbox. Under the hood it listens for new mail through Google's push system, reads the thread and who it's from, and only pings you when something's worth it.</p>
-              <p>I wrote all of it — the login, the live email pipeline, and the daily brief you land on when you open it — and put it online. It started as me being annoyed at my own inbox and turned into the most complete thing I've built.</p>
-              <ul class="tags">
-                <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
-              </ul>
+          <article class="item">
+            <div class="item__head">
+              <h3><a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">oushi</a></h3>
+              <span class="chip">Live</span>
+            </div>
+            <p>An assistant that sits on top of your Gmail and calendar. As mail comes in, it works out what actually needs you and says so, instead of leaving you to dig through the inbox. Under the hood it listens for new mail through Google's push system, reads the thread and who it's from, and only pings you when something's worth it.</p>
+            <p>I wrote all of it — the login, the live email pipeline, and the daily brief you land on when you open it — and put it online. It started as me being annoyed at my own inbox and turned into the most complete thing I've built.</p>
+            <ul class="tags">
+              <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
+            </ul>
+            <div class="gallery">
+              <img src="images/oushi-today.jpg" alt="oushi daily brief" loading="lazy" />
+              <img src="images/oushi-chat.jpg" alt="oushi answering a question about the inbox" loading="lazy" />
+              <img src="images/oushi-labels.jpg" alt="oushi Gmail label system" loading="lazy" />
             </div>
           </article>
 
-          <article class="item item--media">
-            <a class="item__thumb" href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">
-              <img src="images/yquantum-heatmap.png" alt="YQuantum correlation heatmap" loading="lazy" />
-            </a>
-            <div class="item__body">
-              <div class="item__head">
-                <h3><a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">YQuantum 2026</a></h3>
-                <span class="chip chip--award">2nd place</span>
-              </div>
-              <p>A quantum optimizer for insurance portfolios, built over a weekend at Yale's YQuantum for the Capgemini and Hartford challenge. The task: given a pile of assets and a set of rules, pick the best mix. We took 50 real assets, boiled them down to 8 sectors mapped onto 8 qubits, and used QAOA to search for the answer.</p>
-              <p>To make it run well we reworked the circuit so it was about half as deep, which pushed our simulated accuracy from 17% up to 53%. We also checked the quantum result against a brute-force solve to prove it was landing on the real optimum. 2nd of 35 teams, and Best Computational Accuracy.</p>
-              <ul class="tags">
-                <li>Python</li><li>Bloqade</li><li>QAOA</li><li>QUBO</li><li>PyQrack</li>
-              </ul>
+          <article class="item">
+            <div class="item__head">
+              <h3><a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">Yale Hackathon</a></h3>
+              <span class="chip chip--award">2nd place</span>
+            </div>
+            <p>A quantum optimizer for insurance portfolios, built over a weekend at Yale's YQuantum for the Capgemini and Hartford challenge. The task: given a pile of assets and a set of rules, pick the best mix. We took 50 real assets, boiled them down to 8 sectors mapped onto 8 qubits, and used QAOA to search for the answer.</p>
+            <p>To make it run well we reworked the circuit so it was about half as deep, which pushed our simulated accuracy from 17% up to 53%. We also checked the quantum result against a brute-force solve to prove it was landing on the real optimum. 2nd of 35 teams, and Best Computational Accuracy.</p>
+            <ul class="tags">
+              <li>Python</li><li>Bloqade</li><li>QAOA</li><li>QUBO</li><li>PyQrack</li>
+            </ul>
+            <div class="gallery">
+              <img src="images/yquantum-presenting.jpeg" alt="Presenting the project on stage" loading="lazy" />
+              <img src="images/yquantum-coding.jpeg" alt="Working during the hackathon" loading="lazy" />
+              <img src="images/yquantum-heatmap.jpg" alt="Asset correlation heatmap" loading="lazy" />
+              <img src="images/yquantum-loss.jpg" alt="QAOA training loss curves" loading="lazy" />
             </div>
           </article>
           <!-- Add more software/AI projects here -->
