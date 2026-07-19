@@ -9,129 +9,184 @@
 </head>
 <body>
   <main>
-    <header class="intro">
-      <img class="avatar" src="images/portrait.jpeg" alt="Giorgi Malania" />
-      <div>
-        <h1>Giorgi Malania</h1>
-        <p class="tagline">Engineer building at the seam of software and hardware.</p>
-        <p class="links">
-          <a href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">Github</a>
-          <a href="mailto:malaniagrgi@gmail.com">Email</a>
-        </p>
+    <div class="card">
+      <!-- profile header -->
+      <header class="profile">
+        <img class="avatar" src="images/portrait.jpeg" alt="Giorgi Malania" />
+        <div class="profile__meta">
+          <h1>Giorgi Malania</h1>
+          <p class="tagline">Engineer building at the seam of software and hardware.</p>
+          <p class="links">
+            <a href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">Github</a>
+            <a href="mailto:malaniagrgi@gmail.com">Email</a>
+          </p>
+        </div>
+      </header>
+
+      <div class="bio">
+        <p>Mechanical &amp; aerospace engineering student at Case Western Reserve (Dean's High Honor, 3.8 GPA) and Product Manager at RevisionDojo (YC&nbsp;F24), building STEM content for 600,000+ students. I like taking an idea across the software–hardware line and all the way to something deployed. In Madrid this fall.</p>
       </div>
-    </header>
 
-    <section class="about">
-      <p>Hey, I'm Giorgi — a mechanical and aerospace engineering student at Case Western Reserve University (Dean's High Honor, 3.8 GPA) who spends most of his time building products.</p>
-      <p>I'm a Product Manager at RevisionDojo (YC F24), where I build STEM learning content used by 600,000+ students — including an LLM pipeline that turns exam questions into print-ready technical diagrams.</p>
-      <p>The thread through everything is building across the software–hardware line: an AI tool one week, a CAD-and-FEA machine design the next. This fall I'm studying abroad in Madrid.</p>
-    </section>
+      <!-- tab selector -->
+      <nav class="tabs" role="tablist" aria-label="Sections">
+        <button class="tab is-active" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true">Projects</button>
+        <button class="tab" role="tab" id="tab-engineering" aria-controls="panel-engineering" aria-selected="false">Engineering</button>
+        <button class="tab" role="tab" id="tab-work" aria-controls="panel-work" aria-selected="false">Work</button>
+        <button class="tab" role="tab" id="tab-activities" aria-controls="panel-activities" aria-selected="false">Activities</button>
+      </nav>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
-      <div class="cards">
-        <a class="card" href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">
-          <div class="card__thumb"><img src="images/oushi-today.png" alt="oushi interface" loading="lazy" /></div>
-          <div class="card__body">
-            <h3>oushi <span class="chip">Live</span></h3>
-            <p>A personal AI assistant that triages your Gmail and calendar in real time.</p>
-          </div>
-        </a>
+      <div class="panels">
+        <!-- PROJECTS -->
+        <section class="panel is-active" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects" tabindex="0">
+          <article class="item item--media">
+            <a class="item__thumb" href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">
+              <img src="images/oushi-today.png" alt="oushi interface" loading="lazy" />
+            </a>
+            <div class="item__body">
+              <div class="item__head">
+                <h3><a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">oushi</a></h3>
+                <span class="chip">Live</span>
+              </div>
+              <p>A personal AI assistant built on Gmail and Google Calendar. It reads and triages email in real time through Pub/Sub push notifications, understands sender and thread context, and proactively surfaces what actually needs a reply — instead of waiting to be asked. Full Google auth, the real-time push pipeline, and a calm daily-brief interface. Built and deployed end to end.</p>
+              <ul class="tags">
+                <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
+              </ul>
+            </div>
+          </article>
 
-        <a class="card" href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">
-          <div class="card__thumb"><img src="images/yquantum-heatmap.png" alt="YQuantum heatmap" loading="lazy" /></div>
-          <div class="card__body">
-            <h3>YQuantum 2026 <span class="chip chip--award">2nd place</span></h3>
-            <p>An 8-qubit portfolio optimizer on QuEra's neutral-atom stack. Lifted simulated fidelity from 17% to 53%.</p>
-          </div>
-        </a>
-        <!-- Add more software/AI projects here -->
+          <article class="item item--media">
+            <a class="item__thumb" href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">
+              <img src="images/yquantum-heatmap.png" alt="YQuantum correlation heatmap" loading="lazy" />
+            </a>
+            <div class="item__body">
+              <div class="item__head">
+                <h3><a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">YQuantum 2026</a></h3>
+                <span class="chip chip--award">2nd place</span>
+              </div>
+              <p>Built for the Capgemini × The Hartford challenge at Yale. We took 50 real insurance assets, compressed them into 8 sectors mapped to 8 qubits, and formulated constrained mean-variance selection as a QUBO. Implemented QAOA with K8 edge-coloring parallelization that cut circuit depth up to 48% and lifted simulated hardware fidelity from 17% to 53% under realistic noise. 2nd of 35 teams, plus Best Computational Accuracy.</p>
+              <ul class="tags">
+                <li>Python</li><li>Bloqade</li><li>QAOA</li><li>QUBO</li><li>PyQrack</li>
+              </ul>
+            </div>
+          </article>
+          <!-- Add more software/AI projects here -->
+        </section>
+
+        <!-- ENGINEERING -->
+        <section class="panel" role="tabpanel" id="panel-engineering" aria-labelledby="tab-engineering" tabindex="0" hidden>
+          <article class="item">
+            <div class="item__head">
+              <h3>Hurdle Helper</h3>
+              <span class="item__date">Sep – Dec 2025</span>
+            </div>
+            <p>CAD-modeled a rotating L-arm assembly in SolidWorks for a regulation hurdle-training attachment, and produced a 4-sheet drawing package with exploded views, detail callouts, and ±.005″ tolerances. Validated the arm under load with FEA — confirming a 1.8× safety factor on AL 6061-T6 (19.1 ksi peak bending vs. 35 ksi yield) — which drove wall-thickness and fillet revisions across three prototype rounds. Designed a spring-loaded return on a ball-bearing pivot for bidirectional athlete clearance.</p>
+            <ul class="tags"><li>SolidWorks</li><li>FEA</li><li>GD&amp;T</li><li>Prototyping</li></ul>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Wind Tunnel — NACA 2415</h3>
+              <span class="item__date">Apr 2026</span>
+            </div>
+            <p>Characterized a NACA 2415 airfoil at ~20 m/s across seven angles of attack (−10° to 20°) using surface pressure-tap data acquired through LabVIEW in a subsonic wind tunnel. Computed pressure-coefficient distributions and numerically integrated them in Python to obtain lift and moment coefficients, benchmarking against the vortex panel method and published NACA data. Diagnosed two faulty pressure sensors and corrected them via interpolation and exclusion, preserving result integrity.</p>
+            <ul class="tags"><li>Aerodynamics</li><li>LabVIEW</li><li>Python</li></ul>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Optical inspection stage</h3>
+              <span class="item__date">In progress</span>
+            </div>
+            <p>A self-directed build that merges hardware and software: a 2-axis gantry inspection stage paired with a YOLO vision pipeline that detects and localizes defects, then generates structured inspection reports. Modeled on real semiconductor-inspection workflows — my clearest proof of the hardware-plus-software angle.</p>
+            <ul class="tags"><li>Python</li><li>YOLO</li><li>OpenCV</li><li>Creo</li><li>Ansys</li></ul>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Steel Hammer</h3>
+              <span class="item__date">Sep – Dec 2025</span>
+            </div>
+            <p>Machined a two-component steel hammer from 1018 CRS stock on the lathe and mill, holding ±.005″ tolerances. Worked from drawings with thread specs (5/16-18 UNC), reamed holes (Ø.438/.439″), and GD&amp;T callouts.</p>
+            <ul class="tags"><li>Machining</li><li>Lathe · Mill</li><li>GD&amp;T</li></ul>
+          </article>
+          <!-- Add more engineering projects here -->
+        </section>
+
+        <!-- WORK -->
+        <section class="panel" role="tabpanel" id="panel-work" aria-labelledby="tab-work" tabindex="0" hidden>
+          <article class="item">
+            <div class="item__head">
+              <h3>Product Manager <em>— RevisionDojo (YC F24)</em></h3>
+              <span class="item__date">2025 · 2026 — Now</span>
+            </div>
+            <p>AI exam-prep platform used by 600,000+ students. Designed a prompt-engineered LLM pipeline that auto-generates branded technical diagrams (TikZ / Desmos / SVG) from exam questions, classifying by problem type and compiling to print-ready output. Authored 3,000+ worked solutions and 400+ original problems across thermodynamics, electromagnetism, and mechanics.</p>
+            <ul class="tags"><li>Product</li><li>LLM workflows</li><li>TikZ</li><li>Curriculum</li></ul>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Data Analyst <em>— Weatherhead School of Management</em></h3>
+              <span class="item__date">2024 — 2026</span>
+            </div>
+            <p>Automated an Excel-based tracking system that streamlined logistics for 30+ daily executive participants, and engineered a centralized CRM of 1,500+ contacts that accelerated the business-development pipeline for executive-education programs serving firms like JPMorgan, KeyBank, and Lockheed Martin.</p>
+            <ul class="tags"><li>Excel automation</li><li>CRM</li><li>Ops</li></ul>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Technician <em>— Tinkham Veale University Center</em></h3>
+              <span class="item__date">2024 — 2026</span>
+            </div>
+            <p>Executed time-critical setups for 4–5 events weekly (500+ attendees) with a rapid-response team of five, ensuring equipment safety and load compliance under strict deadlines.</p>
+            <ul class="tags"><li>Events</li><li>Logistics</li></ul>
+          </article>
+          <!-- Add more experience here -->
+        </section>
+
+        <!-- ACTIVITIES -->
+        <section class="panel" role="tabpanel" id="panel-activities" aria-labelledby="tab-activities" tabindex="0" hidden>
+          <article class="item">
+            <div class="item__head">
+              <h3>2nd place — YQuantum 2026</h3>
+              <span class="item__date">Apr 2026</span>
+            </div>
+            <p>Placed 2nd of 35 teams at the Capgemini × The Hartford challenge at Yale University, and won Best Computational Accuracy — building a full 8-qubit quantum optimization pipeline on QuEra's Bloqade platform with real Hartford data and regulatory constraints.</p>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>2nd place — WSOM Business Case Competition</h3>
+              <span class="item__date">Mar 2026</span>
+            </div>
+            <p>Analyzed strategy, direct-to-consumer operations, and growth decisions for a $140M manufacturer under a one-hour constraint, then presented retention and competitive-moat frameworks to a panel of judges. 2nd of 16 teams, $500 award.</p>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Business Analyst <em>— Consult Your Community</em></h3>
+              <span class="item__date">2026</span>
+            </div>
+            <p>Developing UAT, rollout, and go-to-market plans for Haven, an MVP barter platform for an artist community — pro-bono consulting for early-stage ventures.</p>
+          </article>
+
+          <article class="item">
+            <div class="item__head">
+              <h3>Community &amp; recognition</h3>
+            </div>
+            <p>Delta Tau Delta member and Resident Advisor at CWRU. Dean's High Honor (3.8 GPA), Certified SOLIDWORKS Associate, and MATLAB Onramp. UWC Maastricht alumnus; native English and Georgian.</p>
+          </article>
+          <!-- Add more activities here -->
+        </section>
       </div>
-    </section>
 
-    <!-- ENGINEERING -->
-    <section>
-      <h2>Engineering</h2>
-      <ul class="rows">
-        <li>
-          <span class="row__title">Hurdle Helper <em>— SolidWorks · FEA</em></span>
-          <span class="row__desc">A rotating L-arm hurdle-training attachment with a full drawing package. FEA-validated to a 1.8× safety factor on 6061-T6.</span>
-          <span class="row__date">2025</span>
-        </li>
-        <li>
-          <span class="row__title">Wind Tunnel <em>— Aerodynamics</em></span>
-          <span class="row__desc">Characterized a NACA 2415 airfoil across seven angles of attack; integrated pressure-tap data in Python for lift and moment coefficients.</span>
-          <span class="row__date">2026</span>
-        </li>
-        <li>
-          <span class="row__title">Optical inspection stage <em>— Hardware + vision</em></span>
-          <span class="row__desc">A 2-axis gantry paired with a computer-vision defect-detection pipeline. In progress.</span>
-          <span class="row__date">Now</span>
-        </li>
-        <!-- Add more engineering projects here -->
-      </ul>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
-      <ul class="rows">
-        <li>
-          <span class="row__title">RevisionDojo (YC F24) <em>— Product Manager</em></span>
-          <span class="row__desc">Built an LLM pipeline that auto-generates print-ready technical diagrams, and authored 3,000+ worked solutions across physics and math.</span>
-          <span class="row__date">2025 · 2026 — Now</span>
-        </li>
-        <li>
-          <span class="row__title">Weatherhead School of Management <em>— Data Analyst</em></span>
-          <span class="row__desc">Automated logistics tracking and built a 1,500-contact CRM for executive-education programs.</span>
-          <span class="row__date">2024 — 2026</span>
-        </li>
-        <li>
-          <span class="row__title">Tinkham Veale University Center <em>— Technician</em></span>
-          <span class="row__desc">Ran time-critical setups for campus events of up to 500 attendees with a rapid-response team.</span>
-          <span class="row__date">2024 — 2026</span>
-        </li>
-        <!-- Add more experience here -->
-      </ul>
-    </section>
-
-    <!-- ACTIVITIES & HONORS -->
-    <section>
-      <h2>Activities &amp; honors</h2>
-      <ul class="rows">
-        <li>
-          <span class="row__title">2nd place — YQuantum 2026</span>
-          <span class="row__desc">Capgemini × The Hartford challenge at Yale University, out of 35 teams.</span>
-          <span class="row__date">2026</span>
-        </li>
-        <li>
-          <span class="row__title">2nd place — WSOM Business Case Competition</span>
-          <span class="row__desc">One-hour strategy case on a $140M manufacturer, out of 16 teams. $500 award.</span>
-          <span class="row__date">2026</span>
-        </li>
-        <li>
-          <span class="row__title">Consult Your Community <em>— Business Analyst</em></span>
-          <span class="row__desc">Building rollout and go-to-market plans for an early-stage barter platform.</span>
-          <span class="row__date">2026</span>
-        </li>
-        <li>
-          <span class="row__title">Delta Tau Delta · Resident Advisor</span>
-          <span class="row__desc">Fraternity member and RA at Case Western Reserve University.</span>
-        </li>
-        <li>
-          <span class="row__title">Recognition</span>
-          <span class="row__desc">Dean's High Honor (3.8 GPA) · CSWA certified · UWC Maastricht alumnus.</span>
-        </li>
-        <!-- Add more activities here -->
-      </ul>
-    </section>
-
-    <footer class="foot">
-      <span>Reach me at <a href="mailto:malaniagrgi@gmail.com">malaniagrgi@gmail.com</a></span>
-      <span class="updated">Last updated July 2026</span>
-    </footer>
+      <footer class="foot">
+        <span>Reach me at <a href="mailto:malaniagrgi@gmail.com">malaniagrgi@gmail.com</a></span>
+        <span class="updated">Last updated July 2026</span>
+      </footer>
+    </div>
   </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
