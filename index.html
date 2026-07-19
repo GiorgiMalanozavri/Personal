@@ -28,7 +28,7 @@
       </header>
 
       <div class="bio">
-        <p>I'm a mechanical and aerospace engineering student at Case Western Reserve, and the Content Product Manager at RevisionDojo (YC F24), where I manage the physics material, and now chemistry too, that nearly a million students around the world study from. Most of my time goes to hardware, though recently I've gotten into software as well. I'm studying in Madrid this fall.</p>
+        <p>I'm a mechanical and aerospace engineering student at Case Western Reserve University and the Content Product Manager at RevisionDojo (YC F24), where I oversee the physics curriculum, and now chemistry, used by nearly a million students worldwide. My work centers on mechanical design and engineering, with a growing focus on software. I am studying at UC3M Madrid this fall.</p>
       </div>
 
       <!-- tab selector -->
@@ -47,8 +47,8 @@
               <h3><a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">oushi</a></h3>
               <span class="chip">Live</span>
             </div>
-            <p>An assistant that sits on top of your Gmail and calendar. As mail comes in, it works out what actually needs you and says so, instead of leaving you to dig through the inbox. Under the hood it listens for new mail through Google's push system, reads the thread and who it's from, and only pings you when something's worth it.</p>
-            <p>I wrote all of it: the login, the live email pipeline, and the daily brief you land on when you open it. It started as me being annoyed at my own inbox and turned into the most complete thing I've built.</p>
+            <p>A personal AI assistant built on Gmail and Google Calendar. It processes incoming mail in real time through Google's Pub/Sub push notifications, parses sender and thread context, and surfaces only the messages that require a response.</p>
+            <p>I designed and deployed the full stack: authentication, the real-time email pipeline, and the daily-brief interface.</p>
             <ul class="tags">
               <li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Google APIs</li><li>Pub/Sub</li><li>Vercel</li>
             </ul>
@@ -64,8 +64,8 @@
               <h3><a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">Yale Hackathon</a></h3>
               <span class="chip chip--award">2nd place</span>
             </div>
-            <p>A quantum optimizer for insurance portfolios, built over a weekend at Yale's YQuantum for the Capgemini and Hartford challenge. The task: given a pile of assets and a set of rules, pick the best mix. We took 50 real assets, boiled them down to 8 sectors mapped onto 8 qubits, and used QAOA to search for the answer.</p>
-            <p>To make it run well we reworked the circuit so it was about half as deep, which pushed our simulated accuracy from 17% up to 53%. We also checked the quantum result against a brute-force solve to prove it was landing on the real optimum. 2nd of 35 teams, and Best Computational Accuracy.</p>
+            <p>A quantum optimizer for insurance portfolio selection, developed at Yale's YQuantum for the Capgemini and The Hartford challenge. We reduced 50 assets to 8 sectors mapped onto 8 qubits and applied QAOA to identify the optimal allocation under real regulatory constraints.</p>
+            <p>Circuit-depth optimizations roughly halved the depth and raised simulated accuracy from 17% to 53%, and we validated the result against a brute-force classical solve. Placed 2nd of 35 teams and won Best Computational Accuracy.</p>
             <ul class="tags">
               <li>Python</li><li>Bloqade</li><li>QAOA</li><li>QUBO</li><li>PyQrack</li>
             </ul>
@@ -86,8 +86,8 @@
               <h3>Hurdle Helper</h3>
               <span class="item__date">Fall 2025</span>
             </div>
-            <p>A training attachment that clamps onto a track hurdle and swings a padded arm into place so a runner can drill their trail leg. I designed the whole assembly in SolidWorks and put the arm through FEA to make sure it wouldn't bend or break when someone hits it at speed. It went through a few prototype rounds before the geometry felt right, and it rides on a spring-loaded pivot so it flips back on its own after each clip.</p>
-            <ul class="tags"><li>SolidWorks</li><li>FEA</li><li>Prototyping</li></ul>
+            <p>A training attachment that clamps onto a track hurdle and swings a padded arm into position for trail-leg drills. Designed in SolidWorks, with the loaded arm validated in FEA and refined across several prototype iterations. The mechanism uses a spring-loaded, ball-bearing pivot that returns the arm after each strike.</p>
+            <ul class="tags"><li>SolidWorks</li><li>SolidWorks Simulation (FEA)</li><li>GD&amp;T</li><li>Engineering Drawings</li><li>Prototyping</li></ul>
             <div class="gallery">
               <img src="images/hurdle-render.jpg" alt="Hurdle Helper CAD render with clamp detail" loading="lazy" />
               <img src="images/hurdle-exploded.jpg" alt="Hurdle Helper exploded view and parts list" loading="lazy" />
@@ -99,8 +99,8 @@
               <h3>Wind Tunnel (NACA 2415)</h3>
               <span class="item__date">Spring 2026</span>
             </div>
-            <p>Tested a NACA 2415 airfoil in a subsonic wind tunnel to see how it behaves as you tilt it. I read the surface pressures at seven angles of attack, then worked through the numbers in Python to pull out lift and moment and compared them against the textbook panel-method predictions and published NACA data. Two of the pressure taps were reading garbage, so part of the job was noticing that and cleaning it up without throwing off the results.</p>
-            <ul class="tags"><li>Aerodynamics</li><li>LabVIEW</li><li>Python</li></ul>
+            <p>Characterized a NACA 2415 airfoil in a subsonic wind tunnel across seven angles of attack. Surface-pressure data was acquired through LabVIEW and reduced in Python to compute lift and moment coefficients, then benchmarked against vortex-panel-method predictions and published NACA data. Diagnosed and corrected two faulty pressure taps to preserve data integrity.</p>
+            <ul class="tags"><li>Aerodynamics</li><li>LabVIEW</li><li>Python</li><li>Data Analysis</li></ul>
             <div class="gallery">
               <img src="images/windtunnel-airfoil.jpg" alt="NACA 2415 airfoil mounted in the wind tunnel" loading="lazy" />
               <img src="images/windtunnel-cp.jpg" alt="Pressure coefficient plots vs. NACA theory" loading="lazy" />
@@ -112,7 +112,7 @@
               <h3>Optical inspection stage</h3>
               <span class="item__date">In progress</span>
             </div>
-            <p>A 2-axis gantry that walks a camera across a part, spots defects with a YOLO model, and writes up what it found and where. The idea is to copy, in miniature, how semiconductor lines inspect wafers. The mechanical side and the vision side are both mine, and it's still in progress.</p>
+            <p>A 2-axis gantry that traverses a camera across a part, detects and localizes defects with a YOLO model, and generates structured inspection reports. Modeled on semiconductor inspection workflows; both the mechanical design and the vision pipeline are my own. Currently in progress.</p>
             <ul class="tags"><li>Python</li><li>YOLO</li><li>OpenCV</li><li>Creo</li><li>Ansys</li></ul>
           </article>
 
@@ -121,8 +121,8 @@
               <h3>Steel Hammer</h3>
               <span class="item__date">Fall 2025</span>
             </div>
-            <p>Machined a two-piece steel hammer from bar stock on the lathe and mill, working from a full drawing with threads, reamed holes, and GD&amp;T callouts. A good crash course in actually holding tolerances by hand.</p>
-            <ul class="tags"><li>Machining</li><li>Lathe · Mill</li><li>GD&amp;T</li></ul>
+            <p>Machined a two-piece steel hammer from bar stock on the lathe and mill, working from a fully dimensioned drawing with thread specifications, reamed holes, and GD&amp;T callouts.</p>
+            <ul class="tags"><li>Machining</li><li>Lathe</li><li>Mill</li><li>GD&amp;T</li></ul>
           </article>
           <!-- Add more engineering projects here -->
         </section>
@@ -134,8 +134,8 @@
               <h3>Content Product Manager <em>at RevisionDojo (YC F24)</em></h3>
               <span class="item__date">2025 · 2026 to now</span>
             </div>
-            <p>I manage the physics material, and lately chemistry too, that close to a million students around the world study from. A lot of the job is making sure the explanations are genuinely right and genuinely clear. On the side I built a tool that takes an exam question and draws its diagram automatically, print-ready, and I've written thousands of worked solutions and original problems across mechanics, electromagnetism, and thermodynamics.</p>
-            <ul class="tags"><li>Product</li><li>Physics</li><li>Chemistry</li><li>Curriculum</li></ul>
+            <p>I own the physics curriculum, and now chemistry, that nearly a million students worldwide study from, and I am responsible for its accuracy and clarity. Day to day I work across Sanity, LaTeX and TikZ, Desmos, and Git, managing content production from authoring through publication, and I have written thousands of worked solutions and original problems across mechanics, electromagnetism, and thermodynamics.</p>
+            <ul class="tags"><li>Sanity</li><li>LaTeX / TikZ</li><li>Desmos</li><li>Git</li><li>LLM Workflows</li><li>Product</li></ul>
             <div class="gallery">
               <img src="images/revisiondojo-logo.png" alt="RevisionDojo logo" loading="lazy" />
               <img src="images/revisiondojo-office.jpg" alt="RevisionDojo office" loading="lazy" />
@@ -147,8 +147,8 @@
               <h3>Data Analyst <em>at Weatherhead School of Management</em></h3>
               <span class="item__date">2024 to 2026</span>
             </div>
-            <p>Kept the executive-education programs running day to day. I automated the spreadsheet that tracked 30+ participants a day and built the contact database of 1,500+ people the team used to reach firms like JPMorgan, KeyBank, and Lockheed Martin.</p>
-            <ul class="tags"><li>Excel automation</li><li>CRM</li><li>Ops</li></ul>
+            <p>Supported executive-education operations: automated an Excel-based tracking system for 30+ daily participants and built a centralized CRM of 1,500+ contacts to support business development for programs serving firms including JPMorgan, KeyBank, and Lockheed Martin.</p>
+            <ul class="tags"><li>Excel</li><li>CRM</li><li>Data Analysis</li></ul>
           </article>
 
           <article class="item">
@@ -156,8 +156,8 @@
               <h3>Technician <em>at Tinkham Veale University Center</em></h3>
               <span class="item__date">2024 to 2026</span>
             </div>
-            <p>Set up and ran four to five campus events a week, some with 500+ people, as part of a small crew handling the AV, staging, and everything that had to be ready on time.</p>
-            <ul class="tags"><li>Events</li><li>Logistics</li></ul>
+            <p>Executed time-critical AV and staging setups for four to five events per week, some exceeding 500 attendees, as part of a rapid-response team responsible for equipment safety and load compliance.</p>
+            <ul class="tags"><li>AV</li><li>Events</li><li>Logistics</li></ul>
           </article>
           <!-- Add more experience here -->
         </section>
@@ -171,7 +171,7 @@
                 <h3>2nd place, YQuantum 2026</h3>
                 <span class="item__date">Apr 2026</span>
               </div>
-              <p>2nd of 35 teams at Yale's YQuantum, plus the Best Computational Accuracy award. Our team built a quantum optimizer for insurance portfolios on real Hartford data. That's me presenting it, above.</p>
+              <p>Awarded 2nd of 35 teams and Best Computational Accuracy at Yale's YQuantum, for a quantum portfolio optimizer developed on QuEra's Bloqade platform using real Hartford data.</p>
             </div>
           </article>
 
@@ -182,7 +182,7 @@
                 <h3>2nd place, WSOM Business Case Competition</h3>
                 <span class="item__date">Mar 2026</span>
               </div>
-              <p>One hour to pull apart a $140M company's strategy and pitch what we'd do differently to a panel of judges. None of us had a business background, which made 2nd of 16 teams (and the $500) feel pretty good.</p>
+              <p>Placed 2nd of 16 teams at the Weatherhead business case competition, analyzing the strategy, direct-to-consumer operations, and growth of a $140M manufacturer within a one-hour constraint and presenting to a panel of judges. $500 award.</p>
             </div>
           </article>
 
@@ -191,14 +191,14 @@
               <h3>Business Analyst <em>at Consult Your Community</em></h3>
               <span class="item__date">2026</span>
             </div>
-            <p>Pro-bono consulting for early-stage ventures. Right now I'm helping plan the launch of Haven, a barter platform for an artist community.</p>
+            <p>Pro-bono strategy consulting for early-stage ventures; currently developing the go-to-market and rollout plan for Haven, an MVP marketplace for an artist community.</p>
           </article>
 
           <article class="item">
             <div class="item__head">
               <h3>Community &amp; recognition</h3>
             </div>
-            <p>Delta Tau Delta member and a Resident Advisor at CWRU. Dean's High Honor (3.8 GPA) and a Certified SOLIDWORKS Associate. UWC Maastricht alum; I speak English and Georgian.</p>
+            <p>Member of Delta Tau Delta and a Resident Advisor at CWRU. Dean's High Honor (3.8 GPA) and Certified SOLIDWORKS Associate. UWC Maastricht alumnus; fluent in English and Georgian.</p>
           </article>
           <!-- Add more activities here -->
         </section>

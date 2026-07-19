@@ -9,8 +9,8 @@
   --line:    #ededf0;
   --line-2:  #e4e4e8;
   --track:   #f4f4f6;
-  --accent:  #e2503b;          /* warm vermilion */
-  --accent-soft: #fdece8;
+  --accent:  #17181c;          /* monochrome ink */
+  --accent-soft: #f1f1f3;
 
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -169,6 +169,27 @@ h1 {
   transition: transform .3s ease;
 }
 .gallery img:hover { transform: translateY(-2px); }
+.gallery img, .item__thumb img { cursor: zoom-in; }
+
+/* lightbox */
+.lightbox {
+  position: fixed; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  background: rgba(18,19,23,.85);
+  opacity: 0; pointer-events: none;
+  transition: opacity .18s ease;
+  z-index: 100;
+  cursor: zoom-out;
+}
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
+.lightbox img {
+  max-width: min(900px, 92vw);
+  max-height: 82vh;
+  width: auto; height: auto;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 24px 70px rgba(0,0,0,.5);
+}
 
 /* chips */
 .chip {
