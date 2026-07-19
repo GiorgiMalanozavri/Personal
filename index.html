@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giorgi Malania</title>
-  <meta name="description" content="Giorgi Malania — full-stack software and precision hardware." />
+  <meta name="description" content="Giorgi Malania — engineer building at the seam of software and hardware." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,6 +13,7 @@
       <img class="avatar" src="images/portrait.jpeg" alt="Giorgi Malania" />
       <div>
         <h1>Giorgi Malania</h1>
+        <p class="tagline">Engineer building at the seam of software and hardware.</p>
         <p class="links">
           <a href="https://www.linkedin.com/in/giorgimalania/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">Github</a>
@@ -22,30 +23,69 @@
     </header>
 
     <section class="about">
-      <p>I build full-stack software and precision hardware.</p>
-      <p>Currently contracting at RevisionDojo, an AI exam prep platform backed by Y Combinator.</p>
-      <p>Previously built oushi, a personal AI assistant over Gmail and Calendar, and a quantum portfolio optimizer that took 2nd place at YQuantum 2026.</p>
-      <p>I also study mechanical and aerospace engineering at Case Western Reserve University, and I'm abroad in Madrid this fall.</p>
-      <p>Feel free to drop me a message at <a href="mailto:malaniagrgi@gmail.com">malaniagrgi@gmail.com</a>.</p>
+      <p>Hey, I'm Giorgi. I study mechanical and aerospace engineering at Case Western Reserve University, but I spend most of my time writing code and shipping products.</p>
+      <p>What I care about is the overlap: AI one week, a precision machine the next, and the software that ties them together. I like taking a rough idea all the way to something that's deployed and actually works.</p>
+      <p>These days I'm contracting for RevisionDojo, a Y Combinator–backed AI exam-prep platform used by 600,000+ students, and I'm off to Madrid this fall for a semester abroad.</p>
     </section>
 
+    <!-- PROJECTS -->
     <section>
       <h2>Projects</h2>
-      <ul class="work">
+      <ul class="rows">
         <li>
           <a href="https://github.com/GiorgiMalanozavri/backbrain" target="_blank" rel="noopener">oushi</a>
-          <span>AI assistant over email &amp; calendar</span>
+          <span>A personal AI assistant that triages your Gmail and calendar in real time.</span>
         </li>
         <li>
           <a href="https://github.com/GiorgiMalanozavri/YQuantum_hartford" target="_blank" rel="noopener">YQuantum 2026</a>
-          <span>quantum portfolio optimizer · 2nd place</span>
+          <span>Quantum portfolio optimizer on QuEra's stack — 2nd place &amp; Best Computational Accuracy.</span>
         </li>
         <li>
           <a href="https://github.com/GiorgiMalanozavri" target="_blank" rel="noopener">Optical inspection stage</a>
-          <span>gantry + computer vision</span>
+          <span>A 2-axis gantry paired with a computer-vision defect pipeline. In progress.</span>
         </li>
+        <!-- Add more projects here -->
       </ul>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section>
+      <h2>Experience</h2>
+      <ul class="rows">
+        <li>
+          <span class="row__title">RevisionDojo <em>— Software &amp; Content Contractor</em></span>
+          <span>AI exam-prep platform (YC F24). Build technical content pipelines. Worked on-site in Hong Kong.</span>
+          <span class="row__date">2025 — Now</span>
+        </li>
+        <li>
+          <span class="row__title">Case Western Reserve University <em>— On-campus roles</em></span>
+          <span>Tinkham Veale University Center &amp; Weatherhead School of Management.</span>
+          <span class="row__date">2025 — Now</span>
+        </li>
+        <!-- Add more experience here -->
+      </ul>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section>
+      <h2>Activities</h2>
+      <ul class="rows">
+        <li>
+          <span class="row__title">Studying abroad — Madrid</span>
+          <span>Universidad Carlos III de Madrid, Fall 2026.</span>
+          <span class="row__date">2026</span>
+        </li>
+        <li class="placeholder">
+          <span class="row__title">Add a club, competition, or activity</span>
+          <span>Tell me what to put here and I'll fill it in.</span>
+        </li>
+        <!-- Add more activities here -->
+      </ul>
+    </section>
+
+    <!-- SNAPSHOTS -->
+    <section>
+      <h2>Snapshots</h2>
       <div class="shots">
         <img src="images/oushi-today.png" alt="oushi daily brief" loading="lazy" />
         <img src="images/oushi-chat.png" alt="oushi chat" loading="lazy" />
@@ -54,7 +94,10 @@
       </div>
     </section>
 
-    <p class="updated">Last updated: July 19th, 2026</p>
+    <footer class="foot">
+      <span>Reach me at <a href="mailto:malaniagrgi@gmail.com">malaniagrgi@gmail.com</a></span>
+      <span class="updated">Last updated July 2026</span>
+    </footer>
   </main>
 </body>
 </html>
