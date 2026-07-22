@@ -1,18 +1,19 @@
 # giorgimalania.com
 
-My personal site and portfolio. Live at **[giorgimalania.com](https://giorgimalania.com)**.
+My personal site and portfolio, live at [giorgimalania.com](https://giorgimalania.com).
 
-A hand-built static site — no framework — introducing who I am and the things I've built (oushi, quantum portfolio optimization, engineering work).
+A hand-built static site with no framework. It introduces who I am and the things I've built, including oushi, the quantum portfolio optimizer, and my engineering work.
 
 ## Stack
 
-`HTML` · `CSS` · `Vanilla JavaScript`
+HTML, CSS, vanilla JavaScript
 
 ## Run locally
 
+Any static server works, for example:
+
 ```bash
-# any static server works, e.g.
 npx serve .
 ```
 
-Then open the printed local URL.
+Then open the local URL it prints.
