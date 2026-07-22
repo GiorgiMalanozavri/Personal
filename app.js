@@ -1,33 +1,25 @@
-const tabs = Array.from(document.querySelectorAll('.tab'));
-const panels = Array.from(document.querySelectorAll('.panel'));
+import { Analytics } from "@vercel/analytics/next"
 
-function select(tab) {
-  tabs.forEach((t) => {
-    const active = t === tab;
-    t.classList.toggle('is-active', active);
-    t.setAttribute('aria-selected', String(active));
-  });
-  panels.forEach((p) => {
-    const active = p.id === tab.getAttribute('aria-controls');
-    p.classList.toggle('is-active', active);
-    p.hidden = !active;
-  });
+// ---------- hero typing effect ----------
+const heading = document.querySelector('.hero h1');
+const cursor = heading?.querySelector('.cursor');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (heading && cursor && !reduceMotion) {
+  const full = "Hey, I'm Giorgi";
+  heading.firstChild.textContent = '';
+  let i = 0;
+  const type = () => {
+    if (i <= full.length) {
+      heading.firstChild.textContent = full.slice(0, i);
+      i++;
+      setTimeout(type, 70);
+    }
+  };
+  setTimeout(type, 250);
 }
 
-tabs.forEach((tab, i) => {
-  tab.addEventListener('click', () => select(tab));
-  // arrow-key navigation across the tablist
-  tab.addEventListener('keydown', (e) => {
-    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-    e.preventDefault();
-    const dir = e.key === 'ArrowRight' ? 1 : -1;
-    const next = tabs[(i + dir + tabs.length) % tabs.length];
-    next.focus();
-    select(next);
-  });
-});
-
-// Click-to-enlarge (lightbox)
+// ---------- click-to-enlarge (lightbox) ----------
 const lightbox = document.createElement('div');
 lightbox.className = 'lightbox';
 lightbox.setAttribute('role', 'dialog');
