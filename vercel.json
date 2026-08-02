@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/resume", "destination": "/MalaniaGiorgi.pdf" }
+  ]
+}
